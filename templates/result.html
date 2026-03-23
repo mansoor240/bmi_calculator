@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+<h2> Your Result</h2>
+
+<p><strong>BMI:</strong> {{ bmi }}</p>
+
+<p>
+    <strong>Category:</strong> 
+    <span style="color: {{ color }}; font-weight: bold;">
+        {{ category }}
+    </span>
+</p>
+
+<p>{{ message }}</p>
+
+<div class="result-box">
+    <p>
+        Based on your activity level, your daily calorie need is:
+    </p>
+    <h3>{{ calories }} kcal</h3>
+</div>
+
+<br>
+<a href="/">Go Back</a>
+
+</div>
+
+</body>
+</html>
